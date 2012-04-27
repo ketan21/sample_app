@@ -8,6 +8,7 @@ gem 'rails', '3.2.2'
 gem 'sqlite3'
 
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -24,6 +25,10 @@ gem 'jquery-rails'
 
 group :development do
     gem 'rspec-rails', '2.9.0'
+end
+
+group :production do
+    gem 'pg'
 end
 
 group :test do
