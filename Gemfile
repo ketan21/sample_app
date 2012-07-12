@@ -14,7 +14,7 @@ end
 gem 'jquery-rails'
 
 group :development do
-    gem 'rspec-rails', '2.10.0'
+    gem 'rspec-rails', '2.11.0'
     gem 'annotated-rails'
 end
 
@@ -23,6 +23,7 @@ group :production do
 end
 
 group :test do
-    gem 'rspec', '2.10.0'
+    gem 'rspec', '2.11.0'
     gem 'webrat'
+    gem 'factory_girl_rails'
 end
