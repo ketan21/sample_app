@@ -2,3 +2,8 @@
 	<%= gravatar_for @user %>
 	<%= @user.name %>
 </h1>
+<div style="float: right">
+	<h2>Profile Information</h2>
+	<strong>Name </strong>: <%= @user.name%> <br />
+	<strong>URL </strong> : <%= link_to user_path(@user), @user%>
+</div>
