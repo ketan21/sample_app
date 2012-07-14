@@ -2,16 +2,27 @@
 <html>
     <head>
       <title><%= title %></title>
-      <%= csrf_meta_tags %>
       <%= render 'layouts/stylesheets' %>
     </head>
     <body>
-      <div class="container">
         <%= render 'layouts/header' %>
-        <section class="round">
-          <%= yield %>
-        </section>
-        <%= render 'layouts/footer' %>
-      </div>
+        <div id="main" role="main">
+          <div class="container">
+            <div class="content">
+              <div class="wrapper">
+                <div class="row">
+                  <div class="span12">
+                    <%= yield %>
+                  </div>
+                </div>
+                <div class="push"></div>  
+              </div>
+                <div class="footer-wrapper">
+                  <%= render 'layouts/footer' %>
+                </div>
+            </div>
+          </div> <!--! end of .container -->
+        </div> <!--! end of #main -->
+        
     </body>
 </html>

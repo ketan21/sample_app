@@ -1,10 +1,20 @@
-<header>
-    <%= link_to logo, root_path %>
+<!-- <header>
+    
     <nav class ="round">
-    <ul class="list">
-      <li><%= link_to "Home", root_path %></li> 
-      <li><%= link_to "Help", help_path %></li>              
-      <li><%= link_to "Sign in", signup_path %></li>
-    </ul>    
+        
     </nav> 
 </header>    
+ -->
+
+<header class="navbar navbar-fixed-top">
+  <nav class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+	      <li><%= link_to "Home", root_path %></li> 
+	      <li><%= link_to "Help", help_path %></li>      
+	      <li><%= link_to "Sign in", signup_path %></li>
+      </ul>
+    </div>
+  </nav>
+  <%= link_to logo, root_path %>
+</header>

@@ -19,7 +19,18 @@ describe UsersController do
       assigns(:user).should == @user
     end
     
+    it  "should have a right title" do
+      get :show, :id => @user
+      response.should have_selector('title', :content => @user.name)
+    end
+
+    it  "should have user's name" do
+      get :show, :id => @user
+      response.should have_selector('h1', :content => @user.name)
+    end
+
   end
+
 
   describe "GET 'new'" do
     it "returns http success" do
