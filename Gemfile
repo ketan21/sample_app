@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem 'spork'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'gravatar_image_tag'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
