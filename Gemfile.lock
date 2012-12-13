@@ -135,15 +135,15 @@ PLATFORMS
 DEPENDENCIES
   annotated-rails
   bootstrap-sass
-  coffee-rails (~> 3.2.1)
+  coffee-rails
   factory_girl_rails
   gravatar_image_tag
   jquery-rails
   pg
-  rails (= 3.2.2)
-  rspec (= 2.11.0)
-  rspec-rails (= 2.11.0)
-  sass-rails (~> 3.2.3)
+  rails
+  rspec
+  rspec-rails
+  sass-rails
   spork
   sqlite3
   uglifier (>= 1.0.3)
